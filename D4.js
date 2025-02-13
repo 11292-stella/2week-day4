@@ -4,7 +4,7 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const area = function (l1, l2) {
-  const rett = l1 + l2
+  const rett = l1 * l2
   console.log(rett)
 }
 
