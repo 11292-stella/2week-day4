@@ -55,6 +55,16 @@ console.log(crazyDiff(22))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n) {
+  if ((n >= 20 && n <= 100) || n === 400) {
+    return "true"
+  } else {
+    return "false"
+  }
+}
+
+boundary(50)
+console.log(boundary(50))
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -63,6 +73,14 @@ console.log(crazyDiff(22))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const epify = function (str) {
+  if (str.startsWith("epicode")) return str
+  else {
+    return "epicode" + str
+  }
+}
+
+console.log(epify("ciao"))
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
