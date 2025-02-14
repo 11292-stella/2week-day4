@@ -81,6 +81,7 @@ const epify = function (str) {
 }
 
 console.log(epify("ciao"))
+console.log(epify("epicode"))
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -89,11 +90,28 @@ console.log(epify("ciao"))
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function check3and7(number) {
+  if (number % 3 === 0 || number % 7 === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const reverseString = function (n) {
+  let reversed = ""
+  for (let i = 0; i < n.lenght; i++) {
+    reversed += n.charAt(n.lenght - (1 + i))
+  }
+}
+
+console.log("ciao")
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
